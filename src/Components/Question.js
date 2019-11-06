@@ -4,9 +4,8 @@ function Question(props) {
    let questionBody = props.content;
 
     const showOptions = () => {
-        return (
-            questionBody.options[0]
-        );
+        return  questionBody.options.map((option, i) => <p>{option}</p>)
+        
     }
 
     return (
