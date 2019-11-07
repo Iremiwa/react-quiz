@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import QuestionOption from './QuestionOption';
 
 function Question(props) {
    let questionBody = props.content;
 
     const showOptions = () => {
-        return  questionBody.options.map((option, i) => <p>{option}</p>)
+        return  questionBody.options.map((option, i) => <QuestionOption value={option} key={i} scoreAnswer={props.scoreAnswer}/>)
+
         
     }
 

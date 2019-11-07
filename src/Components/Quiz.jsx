@@ -15,7 +15,24 @@ class Quiz extends Component {
     }
 
     showContent = () => {
-        return <Question content={this.state.questionList[0]} />
+        return <Question content={this.state.questionList[this.state.questionIndex]} scoreAnswer={this.scoreAnswer} />
+        
+    
+    }
+
+    scoreAnswer = (value) => {
+        console.log("score is", value)
+
+        let question = this.state.questionList[this.state.questionIndex];
+        this.setState((state) => {
+            return {...state.questionIndex++}
+        })
+
+        if(value === question.answer) {
+            this.setState ((state) => {
+                return {...state.score++}
+            })
+        }
     }
 
     render() { 
