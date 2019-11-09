@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import QuestionGenerator from '../Utilities/QuestionGenerator';
 import Question from './Question';
+import Results from './Results';
 
 class Quiz extends Component {
 
@@ -10,14 +11,18 @@ class Quiz extends Component {
     this.state = { 
         questionList: QuestionGenerator(),
         questionIndex: 0,
-        score: 0
+        score: 10
      }
     }
 
     showContent = () => {
+        if(this.state.questionIndex < this.state.questionList.length) { 
         return <Question content={this.state.questionList[this.state.questionIndex]} scoreAnswer={this.scoreAnswer} />
-        
-    
+       }
+
+       return (
+           <Results score={this.state.score} />
+       )
     }
 
     scoreAnswer = (value) => {
@@ -30,6 +35,7 @@ class Quiz extends Component {
 
         if(value === question.answer) {
             this.setState ((state) => {
+                console.log(scoreResults);
                 return {...state.score++}
             })
         }
