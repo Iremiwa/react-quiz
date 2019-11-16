@@ -5,8 +5,8 @@ function QuestionOption(props) {
     
     return (
         <div onClick={() => props.scoreAnswer(props.value)}>
-            <input type= 'radio' />
-                <p>{optionText}</p>
+            
+            <p>{optionText}</p>
          
         </div>
     )
