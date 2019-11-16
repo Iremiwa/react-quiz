@@ -6,17 +6,13 @@ import Card from '@material-ui/core/Card';
 function Homepage () {
     return (
     
-        <Card className="card" id="home">
-          <div>
-          <p id="gameName">Game Of Thrones Trivia Quiz</p>
-          </div>
-          <div>
-          <p>
+        <Card className="card">
+          <div id="gameStart">
+          <h1>Game Of Thrones Trivia Quiz</h1>
           <ul type="none">
-            <li className="button"><Link to = "/play">Play</Link></li>
+          <li className="button1"><Link className="button-text" to = "/play">Play</Link></li>
           </ul>
-          </p>
-          </div>
+          </div>  
         </Card>
     
     
