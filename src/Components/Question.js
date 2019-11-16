@@ -1,5 +1,7 @@
 import React from 'react';
 import QuestionOption from './QuestionOption';
+import './Styles/Quiz.css';
+import Card from '@material-ui/core/Card';
 
 function Question(props) {
    let questionBody = props.content;
@@ -11,10 +13,16 @@ function Question(props) {
     }
 
     return (
+        <Card className="card1">
         <div>
+        <div id = "question-container">
             <p>{questionBody.question}</p>
-            {showOptions()}
         </div>
+        <div id = "options-container">
+            <p>{showOptions()}</p>
+        </div>
+        </div>
+        </Card>
     );
 }
 

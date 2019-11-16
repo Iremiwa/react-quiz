@@ -54,10 +54,9 @@ class Quiz extends Component {
     render() { 
         return ( 
             <div >
-              <div>
-                
+              
                {this.showContent()}
-               </div> 
+                
             </div>
          );
     }

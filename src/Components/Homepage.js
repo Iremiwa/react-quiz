@@ -5,14 +5,20 @@ import Card from '@material-ui/core/Card';
 
 function Homepage () {
     return (
-    <div>
+    
         <Card className="card" id="home">
-          <h1 id="gameName">Game Of Thrones Trivia Quiz</h1>
+          <div>
+          <p id="gameName">Game Of Thrones Trivia Quiz</p>
+          </div>
+          <div>
+          <p>
           <ul type="none">
             <li className="button"><Link to = "/play">Play</Link></li>
           </ul>
-          </Card>
-    </div>
+          </p>
+          </div>
+        </Card>
+    
     
     )
 }
