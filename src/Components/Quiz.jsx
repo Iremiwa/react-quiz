@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import QuestionGenerator from '../Utilities/QuestionGenerator';
 import Question from './Question';
 import Results from './Results';
-import '../index.css';
+import './Styles/Quiz.css';
 
 
 class Quiz extends Component {
