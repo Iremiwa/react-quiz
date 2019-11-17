@@ -5,8 +5,8 @@ import Card from '@material-ui/core/Card';
 
 function Homepage () {
     return (
-    
-        <Card className="card">
+      <div className="bg">
+        <Card className="card" id="playGame">
           <div id="gameStart">
           <h1>Game Of Thrones Trivia Quiz</h1>
           <ul type="none">
@@ -14,7 +14,7 @@ function Homepage () {
           </ul>
           </div>  
         </Card>
-    
+        </div>
     
     )
 }

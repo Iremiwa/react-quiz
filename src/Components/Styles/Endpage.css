@@ -30,3 +30,22 @@
     background-color: rgb(60, 57, 66);
     margin-right: 20px;
 }
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 rgb(86, 165, 235,0.5);
+    transform: translateY(-1px);
+    transition: transform  150ms;
+    color: lightskyblue;
+}
+
+.button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#end-container {
+    background-color: rgba(217, 230, 243, 0.5);
+    border-radius: 20px;
+}

@@ -13,7 +13,8 @@ function Question(props) {
     }
 
     return (
-        <Card className="card1">
+        
+        <Card className="card1" id="playGame1">
         <div>
         <div id = "question-container">
             <p>{questionBody.question}</p>
@@ -23,6 +24,7 @@ function Question(props) {
         </div>
         </div>
         </Card>
+        
     );
 }
 
