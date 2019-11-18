@@ -6,7 +6,7 @@ const Endgame = () => {
     return(
         <div>
         <ul type="none">
-            <li className="button"><Link className="text" to="/play">Restart</Link></li>
+            
             <li className="button"><Link className="text" to="/">Home</Link></li>
         </ul>
         </div>
