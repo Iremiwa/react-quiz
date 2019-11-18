@@ -2,6 +2,7 @@ import React from 'react';
 import QuestionOption from './QuestionOption';
 import './Styles/Quiz.css';
 import Card from '@material-ui/core/Card';
+//import QuestionNumber from './QuestionNumber';
 
 function Question(props) {
    let questionBody = props.content;

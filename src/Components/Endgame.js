@@ -7,7 +7,7 @@ const Endgame = () => {
         <div>
         <ul type="none">
             
-            <li className="button"><Link className="text" to="/">Home</Link></li>
+            <li className="button"><Link className="text" to="/">Restart</Link></li>
         </ul>
         </div>
     );

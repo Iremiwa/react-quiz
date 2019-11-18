@@ -13,13 +13,15 @@ class Quiz extends Component {
     this.state = { 
         questionList: QuestionGenerator(),
         questionIndex: 0,
-        score: 1
+        score: 0
      }
     }
 
     showContent = () => {
+        console.log(this.state.questionIndex);
         if(this.state.questionIndex < this.state.questionList.length) { 
-        return <Question content={this.state.questionList[this.state.questionIndex]} scoreAnswer={this.scoreAnswer}  />
+        return <Question content={this.state.questionList[this.state.questionIndex]} scoreAnswer={this.scoreAnswer} />
+        
        }
 
        return (   
@@ -28,10 +30,10 @@ class Quiz extends Component {
     }
 
     
+    
 
     scoreAnswer = (value) => {
 
-        console.log("score is", value)
 
         let question = this.state.questionList[this.state.questionIndex];
         this.setState((state) => {

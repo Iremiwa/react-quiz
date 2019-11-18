@@ -1,4 +1,4 @@
-function QuestionGenerator(count = 5) {
+function QuestionGenerator() {
     const questions = [
         {
             question: "How many fingertips did Stannis Baratheon chop off of Davos' hand(s)? ",
@@ -51,9 +51,10 @@ function QuestionGenerator(count = 5) {
 
     return (
         questions.sort(function() {
-            return (Math.random() - Math.random())}).slice(count)
+            return (Math.random() - Math.random())}).slice(0, 5)
     )
     
-}
+         
+        }    
 
 export default QuestionGenerator;
